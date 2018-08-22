@@ -1,0 +1,32 @@
+body{
+    background-color: #222;
+}
+.cardFan{
+    width: 300px;
+    height: 200px;
+    margin: 2rem auto;
+}
+.cardFan>img{
+    position: absolute;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.2);
+    /*变换的原点：水平方向：center(50%);垂直方向：400px*/
+    transform-origin: center 400px;
+    /*定义transform的平滑过渡*/
+    transition: transform .7s ease;
+}
+.cardFan img:first-child{
+    /*在定义的原点的基础上旋转*/
+    transform: rotate(5deg);
+}
+.cardFan img:last-child{
+    /*同理*/
+    transform: rotate(-5deg);
+}
+.cardFan:hover img:first-child{
+    transform: rotate(25deg);
+}
+.cardFan:hover img:last-child{
+    transform: rotate(-25deg);
+}

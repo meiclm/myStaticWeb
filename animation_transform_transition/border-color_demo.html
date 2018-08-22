@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-color</title>
+    <link href="css/title.css" rel="stylesheet" type="text/css">
+    <style>
+        body{
+            background-color: #222;
+        }
+        .spinner{
+            border-radius: 100%;
+            width: 10em;
+            height: 10em;
+            margin: 100px auto;
+            border: 1.1em solid rgba(255,255,255,.2);
+            border-left-color: #fff;
+            -webkit-animation: load 1.1s infinite linear;
+        }
+        @-webkit-keyframes load {
+            from{-webkit-transform: rotate(0deg)}
+            to{-webkit-transform: rotate(360deg)}
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <a href="border-color_demo.html">设置边框的颜色</a>
+    <a href="border-width.html">设置边框的宽度</a>
+    <a href="animation-delay_demo.html">设置动画的延迟</a>
+    <a href="transition_maopao.html">transition+hover实例+冒泡</a>
+    <a href="pictureWall.html">照片墙效果</a>
+</section>
+<br>
+<div class="spinner"></div>
+
+</body>
+</html>
